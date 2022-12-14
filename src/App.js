@@ -1,13 +1,22 @@
-
 import './App.css';
 import Header from './Component/Header';
+import List from './Component/List';
 
 function App() {
+   let titles =[  "Abdul Basit", "Usama Ahmed", "Ammar Khan" ]
+   let img =[  "abc.jpg", "xyz.jpg" , "bot.jpg" ]
+   let location =[  "Karachi", "Lahore" ,"Islamabad" ]
+  
   return (
-    <div className="App">
-        Hello Ammar Adeek
+     <div>
+        {/* Passing data as a prop from parent to child */}
         <Header/>
-    </div>
+        <List title={titles[0]} img={img[0]} location={location[0]}/>
+        <Header/> 
+        <List title={titles[1]} img={img[1]} location={location[1]}/>
+        <Header/>
+        <List title={titles[2]} img={img[2]} location={location[2]}/>
+        </div>
   );
 }
 
