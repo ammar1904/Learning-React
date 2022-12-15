@@ -1,7 +1,8 @@
 import './App.css';
-import Counter from './Component/Counter';
-import Header from './Component/Header';
-import List from './Component/List';
+// import Counter from './Component/Counter';
+// import Header from './Component/Header';
+// import List from './Component/List';
+import ResourceChange from './Component/ResourceChange';
 
 function App() {
    let titles =[  "Abdul Basit", "Usama Ahmed", "Ammar Khan" ]
@@ -16,9 +17,9 @@ function App() {
         <Header/> 
         <List title={titles[1]} img={img[1]} location={location[1]}/>
         <Header/>
-        <List title={titles[2]} img={img[2]} location={location[2]}/> */}
-         <Counter/>
-
+        <List title={titles[2]} img={img[2]} location={location[2]}/>
+         <Counter/> */}
+         <ResourceChange/>
         </div>
   );
 }
