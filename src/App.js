@@ -3,6 +3,9 @@ import {Route, Routes , Link } from "react-router-dom";
 import Home from './Pages/Home';
 import BookList from './Pages/BookList';
 import Book from './Pages/Book';
+import NewBook from './Pages/NewBook';
+import NotFound from './Pages/NotFound';
+import BookLayout from './Pages/BookLayout';
 
 // import CompA from './Component/CompA';
 // import Counter from './Component/Counter';
@@ -37,6 +40,10 @@ function App() {
 
    return (
       <>
+      <Routes>
+         <Route path="/books" element={<h1>Extra Content</h1>}/>
+      </Routes>
+
       <nav>
          <ul>
             <li><Link to="/">Home</Link></li>
@@ -45,8 +52,18 @@ function App() {
       </nav>
       <Routes>
          <Route path="/" element={<Home/>} />
-         <Route path="/books" element={<BookList/>} />
+         {/* <Route path="/books" element={<BookList/>} />
          <Route path="/books/:id" element={<Book/>} />
+         <Route path="/books/new" element={<NewBook/>} /> */}
+
+         <Route path="/books" element={<BookLayout/>}>
+            <Route index element={<BookList/>}/>
+            <Route path=":id" element={<Book/>}/>
+            <Route path="new" element={<NewBook/>}/>
+         </Route>
+
+         <Route path="*" element={<NotFound/>}/>
+         
       </Routes>
 
       </>
