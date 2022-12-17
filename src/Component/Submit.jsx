@@ -17,7 +17,10 @@ const Submit = () => {
   return (
     <form onSubmit={onSubmit}>
       <label htmlFor="email">Email</label>
-      <input ref={emailRef} type="email" id="" />
+      <input ref={emailRef} type="email" id="email"/>
+      <label htmlFor="email">Password</label>
+      <input ref={passwordRef} type="password" id="password"/>
+      <button type="submit">Submit</button>
 
     </form>
   )

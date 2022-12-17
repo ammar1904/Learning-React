@@ -1,4 +1,5 @@
 import './App.css';
+import Submit from './Component/Submit';
 // import {Route, Routes , Link } from "react-router-dom";
 // import Home from './Pages/Home';
 // import BookList from './Pages/BookList';
@@ -75,7 +76,7 @@ function App() {
 
    return (
       <>
-         <p>Email</p>
+         <Submit/>
       </>
    )
 }
