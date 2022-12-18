@@ -2,7 +2,9 @@ import React from 'react'
 
 const Free = () => {
   return (
-    <div><h1>Free</h1></div>
+    <>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, numquam.
+    </>
   )
 }
 
