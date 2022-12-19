@@ -67,7 +67,6 @@ import Free from './Component/Free';
 //          <Route path="*" element={<NotFound/>}/>
          
 //       </Routes>
-
 //       <Submit/>
 //       </>
 //    );
@@ -78,7 +77,7 @@ function App() {
 
    return (
       <>
-      <Free/>
+         <Free/>
       </>
    )
 }
